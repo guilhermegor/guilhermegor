@@ -79,7 +79,7 @@ determinism · publishprobe
 
 ## Stack
 
-- **Linguagens:** Python · TypeScript · JavaScript · VBA
+- **Linguagens:** Python · TypeScript · JavaScript · SQL · HTML · CSS · VBA
 - **Runtimes:** CPython · Node.js
 - **Frameworks:** FastAPI · NestJS · React
 
