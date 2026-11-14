@@ -21,11 +21,11 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 | Family | What it does |
 |---|---|
 | **Open data** | `opendata-*`: unofficial SDKs for data that regulators, exchanges and statistics agencies publish. Typed, cached, with provenance. |
-| **Layouts** | `layouts-*`: the file formats institutions exchange. Read, build and validate, with no I/O. |
+| **Layouts** | `layouts-*`: the file formats institutions exchange. Read, build, validate and write the file, with no network or database calls: fetching and sending it belong to `integrations-*`. |
 | **Pure** | `pure*`: math, pricing, risk and performance attribution. Computation only, no I/O. |
 | **Rulebooks** | `rulebooks-*`: fund rules as in force on a given date. |
 | **Integrations** | `integrations-*`: clients for the platforms operations teams already use. |
-| **Hubs** | `hub-*`: services that own the data for one theme and expose it through an API. Private, deployed, not published. |
+| **Hubs** | `hub-*`: services that own the data for one theme and expose it through an API. Open-source code; data and configuration stay out of the repo. |
 | **Engineering tooling** | Scaffolding, dev environment and release checks behind every repo here. |
 
 ## Shipped

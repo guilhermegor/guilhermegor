@@ -21,11 +21,11 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 | Família | O que faz |
 |---|---|
 | **Open data** | `opendata-*`: SDKs não oficiais para os dados que reguladores, bolsas e institutos de estatística publicam. Tipados, com cache e proveniência. |
-| **Layouts** | `layouts-*`: os formatos de arquivo que as instituições trocam entre si. Ler, montar e validar, sem I/O. |
+| **Layouts** | `layouts-*`: os formatos de arquivo que as instituições trocam entre si. Ler, montar, validar e gravar o arquivo, sem chamadas de rede ou banco: buscá-lo e enviá-lo fica com `integrations-*`. |
 | **Pure** | `pure*`: matemática, precificação, risco e atribuição de performance. Só cálculo, sem I/O. |
 | **Rulebooks** | `rulebooks-*`: as regras de fundos vigentes em uma data. |
 | **Integrations** | `integrations-*`: clientes para as plataformas que as equipes de operações já usam. |
-| **Hubs** | `hub-*`: serviços que são donos dos dados de um tema e os expõem por uma API. Privados, implantados, não publicados. |
+| **Hubs** | `hub-*`: serviços que são donos dos dados de um tema e os expõem por uma API. Código aberto; dados e configuração ficam fora do repositório. |
 | **Ferramentas de engenharia** | Scaffolding, ambiente de desenvolvimento e checagens de release por trás de cada repositório daqui. |
 
 ## Publicados
