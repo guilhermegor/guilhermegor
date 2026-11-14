@@ -11,12 +11,12 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 ## Para onde isso vai
 
 1. **Fundação** (agora): bibliotecas open source para dados públicos, layouts de arquivos regulatórios e a matemática de precificação e risco. Tudo o que está abaixo.
-2. **APIs e pipelines de dados**: serviços sobre essas bibliotecas para posições, dados de mercado, documentos regulatórios, precificação e risco de carteira.
+2. **APIs e pipelines de dados**: serviços `hub-*` sobre essas bibliotecas para dados de mercado, precificação, posições, estatísticas, risco, rulebooks e documentos de fundos.
 3. **Produtos**: ferramentas front-to-back para instituições financeiras, do pré-trade à contabilidade.
 
 ## Como está organizado
 
-<sub>Cada biblioteca pertence a uma família, e o prefixo do nome diz qual. Cada família tem uma única função.</sub>
+<sub>Cada repositório pertence a uma família, e o prefixo do nome diz qual. Cada família tem uma única função.</sub>
 
 | Família | O que faz |
 |---|---|
@@ -25,6 +25,7 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 | **Pure** | `pure*`: matemática, precificação, risco e atribuição de performance. Só cálculo, sem I/O. |
 | **Rulebooks** | `rulebooks-*`: as regras de fundos vigentes em uma data. |
 | **Integrations** | `integrations-*`: clientes para as plataformas que as equipes de operações já usam. |
+| **Hubs** | `hub-*`: serviços que são donos dos dados de um tema e os expõem por uma API. Privados, implantados, não publicados. |
 | **Ferramentas de engenharia** | Scaffolding, ambiente de desenvolvimento e checagens de release por trás de cada repositório daqui. |
 
 ## Publicados
@@ -52,7 +53,7 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 
 ### Open data
 
-- **Reguladores e entidades de mercado brasileiros:** opendata-funddocs-cvm · opendata-bcb · opendata-treasury-br · opendata-anbima-pub · opendata-anbima-data · opendata-debenturescombr
+- **Reguladores e entidades de mercado brasileiros:** opendata-funddocs-cvm · opendata-bcb · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
 - **Preços, taxas, ratings e commodities:** opendata-global-rates · opendata-world-government-bonds · opendata-trading-economics · opendata-spglobal · opendata-yahii · opendata-mais-retorno · opendata-cepea · opendata-coincap · opendata-coinmarket
 - **Macro e fiscal · reguladores dos EUA · outros:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us · opendata-finra-us · opendata-who-int
 
@@ -72,6 +73,10 @@ rulebooks-funds-br · rulebooks-funds-us
 ### Integrations
 
 integrations-b3 · integrations-pipefy · integrations-typeform
+
+### Hubs
+
+hub-marketdata · hub-pricing · hub-positions · hub-statistics · hub-risk · hub-rulebooks · hub-funddocs
 
 ### Ferramentas de engenharia
 

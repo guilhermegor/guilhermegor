@@ -11,12 +11,12 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 ## Where this is going
 
 1. **Foundation** (now): open-source libraries for public data, regulatory file formats, and pricing and risk math. Everything below.
-2. **APIs and data pipelines**: services over those libraries for positions, market data, regulatory documents, pricing and portfolio risk.
+2. **APIs and data pipelines**: `hub-*` services over those libraries for market data, pricing, positions, statistics, risk, rulebooks and fund documents.
 3. **Products**: front-to-back tooling for financial institutions, from pre-trade to accounting.
 
 ## How it's organized
 
-<sub>Every library belongs to one family, and the prefix of its name says which. Each family has one job.</sub>
+<sub>Every repository belongs to one family, and the prefix of its name says which. Each family has one job.</sub>
 
 | Family | What it does |
 |---|---|
@@ -25,6 +25,7 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 | **Pure** | `pure*`: math, pricing, risk and performance attribution. Computation only, no I/O. |
 | **Rulebooks** | `rulebooks-*`: fund rules as in force on a given date. |
 | **Integrations** | `integrations-*`: clients for the platforms operations teams already use. |
+| **Hubs** | `hub-*`: services that own the data for one theme and expose it through an API. Private, deployed, not published. |
 | **Engineering tooling** | Scaffolding, dev environment and release checks behind every repo here. |
 
 ## Shipped
@@ -52,7 +53,7 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 
 ### Open data
 
-- **Brazilian regulators & market bodies:** opendata-funddocs-cvm · opendata-bcb · opendata-treasury-br · opendata-anbima-pub · opendata-anbima-data · opendata-debenturescombr
+- **Brazilian regulators & market bodies:** opendata-funddocs-cvm · opendata-bcb · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
 - **Prices, rates, ratings & commodities:** opendata-global-rates · opendata-world-government-bonds · opendata-trading-economics · opendata-spglobal · opendata-yahii · opendata-mais-retorno · opendata-cepea · opendata-coincap · opendata-coinmarket
 - **Macro & fiscal · US regulators · other:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us · opendata-finra-us · opendata-who-int
 
@@ -72,6 +73,10 @@ rulebooks-funds-br · rulebooks-funds-us
 ### Integrations
 
 integrations-b3 · integrations-pipefy · integrations-typeform
+
+### Hubs
+
+hub-marketdata · hub-pricing · hub-positions · hub-statistics · hub-risk · hub-rulebooks · hub-funddocs
 
 ### Engineering tooling
 
