@@ -64,7 +64,7 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 
 ### Pure
 
-puremath · purepricing · purepricing-br · purerisk · pureattribution · purefees · puretidy · puredsa
+puremaths · purepricing · purepricing-br · purerisk · pureattribution · purefees · puretidy · puredsa
 
 ### Rulebooks
 
