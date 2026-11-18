@@ -10,7 +10,7 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 
 ## Para onde isso vai
 
-1. **Fundação** (agora): bibliotecas open source para dados públicos, layouts de arquivos regulatórios e a matemática de precificação e risco. Tudo o que está abaixo.
+1. **Fundação** (agora): bibliotecas open source para dados públicos, layouts de arquivos regulatórios e a matemática de precificação, risco e tributos. Tudo o que está abaixo.
 2. **APIs e pipelines de dados**: serviços `hub-*` sobre essas bibliotecas para dados de mercado, precificação, posições, estatísticas, risco, rulebooks e documentos de fundos.
 3. **Produtos**: ferramentas front-to-back para instituições financeiras, do pré-trade à contabilidade.
 
@@ -22,8 +22,8 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 |---|---|
 | **Open data** | `opendata-*`: SDKs não oficiais para os dados que reguladores, bolsas e institutos de estatística publicam. Tipados, com cache e proveniência. |
 | **Layouts** | `layouts-*`: os formatos de arquivo que as instituições trocam entre si. Ler, montar, validar e gravar o arquivo, sem chamadas de rede ou banco: buscá-lo e enviá-lo fica com `integrations-*`. |
-| **Pure** | `pure*`: matemática, precificação, risco e atribuição de performance. Só cálculo, sem I/O. |
-| **Rulebooks** | `rulebooks-*`: as regras de fundos vigentes em uma data. |
+| **Pure** | `pure*`: matemática, precificação, risco, tributos e atribuição de performance. Só cálculo, sem I/O. Um número calculado fica aqui mesmo quando a regra por trás dele muda com o tempo. |
+| **Rulebooks** | `rulebooks-*`: normas como dado, vigentes em uma data. Uma linha por dispositivo (ato, artigo, parágrafo), com a fonte, para o compliance de fundos. Devolvem a norma, nunca um resultado calculado: aplicar a norma é `pure*`. |
 | **Integrations** | `integrations-*`: clientes para as plataformas que as equipes de operações já usam. |
 | **Hubs** | `hub-*`: serviços que são donos dos dados de um tema e os expõem por uma API. Código aberto; dados e configuração ficam fora do repositório. |
 | **Ferramentas de engenharia** | Scaffolding, ambiente de desenvolvimento e checagens de release por trás de cada repositório daqui. |
@@ -42,6 +42,8 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 | [layouts-cvm](https://github.com/guilhermegor/layouts-cvm) | Montar e validar os arquivos de fundos enviados à CVM |
 | **Pure** | |
 | [wwdates](https://github.com/guilhermegor/wwdates) | Calendários de dias úteis no mundo todo |
+| [pure-docs-br](https://github.com/guilhermegor/pure-docs-br) | Validar, aplicar e remover a máscara de documentos brasileiros (CPF, CNPJ alfanumérico) |
+| [pure-schema-regimes](https://github.com/guilhermegor/pure-schema-regimes) | Adaptadores de schema para séries cujas colunas mudam no meio do caminho |
 | **Ferramentas de engenharia** | |
 | [blueprintx](https://github.com/guilhermegor/blueprintx) | O scaffolding por trás de cada repositório daqui |
 | [timeglass](https://github.com/guilhermegor/timeglass) | Uso e cobrança de assinaturas de IA entre fornecedores |
@@ -59,12 +61,12 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 
 ### Layouts
 
-- **Enviados a reguladores:** layouts-bcb
+- **Enviados a reguladores e ao fisco:** layouts-bcb · layouts-nfse
 - **Padrões de mercado entre instituições:** layouts-anbima · layouts-febraban
 
 ### Pure
 
-puremaths · purepricing · purepricing-br · purerisk · pureattribution · purefees · puretidy · puredsa
+puremaths · purepricing · purepricing-br · purerisk · pureattribution · purefees · puretaxes-br · puretidy · puredsa
 
 ### Rulebooks
 
@@ -72,7 +74,7 @@ rulebooks-funds-br · rulebooks-funds-us
 
 ### Integrations
 
-integrations-b3 · integrations-pipefy · integrations-typeform
+integrations-b3 · integrations-nfse · integrations-pipefy · integrations-typeform
 
 ### Hubs
 
