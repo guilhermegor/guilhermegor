@@ -10,7 +10,7 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 
 ## Where this is going
 
-1. **Foundation** (now): open-source libraries for public data, regulatory file formats, and pricing and risk math. Everything below.
+1. **Foundation** (now): open-source libraries for public data, regulatory file formats, and the math behind pricing, risk and taxes. Everything below.
 2. **APIs and data pipelines**: `hub-*` services over those libraries for market data, pricing, positions, statistics, risk, rulebooks and fund documents.
 3. **Products**: front-to-back tooling for financial institutions, from pre-trade to accounting.
 
@@ -22,8 +22,8 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 |---|---|
 | **Open data** | `opendata-*`: unofficial SDKs for data that regulators, exchanges and statistics agencies publish. Typed, cached, with provenance. |
 | **Layouts** | `layouts-*`: the file formats institutions exchange. Read, build, validate and write the file, with no network or database calls: fetching and sending it belong to `integrations-*`. |
-| **Pure** | `pure*`: math, pricing, risk and performance attribution. Computation only, no I/O. |
-| **Rulebooks** | `rulebooks-*`: fund rules as in force on a given date. |
+| **Pure** | `pure*`: math, pricing, risk, taxes and performance attribution. Computation only, no I/O. A computed number belongs here even when the rule behind it changes over time. |
+| **Rulebooks** | `rulebooks-*`: regulations as data, as in force on a given date. One row per provision (act, article, paragraph), with its source, for fund compliance. They return the rule, never a computed result: applying the rule is `pure*`. |
 | **Integrations** | `integrations-*`: clients for the platforms operations teams already use. |
 | **Hubs** | `hub-*`: services that own the data for one theme and expose it through an API. Open-source code; data and configuration stay out of the repo. |
 | **Engineering tooling** | Scaffolding, dev environment and release checks behind every repo here. |
@@ -42,6 +42,8 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 | [layouts-cvm](https://github.com/guilhermegor/layouts-cvm) | Build and validate the fund files sent to the CVM |
 | **Pure** | |
 | [wwdates](https://github.com/guilhermegor/wwdates) | Global business-day calendars |
+| [pure-docs-br](https://github.com/guilhermegor/pure-docs-br) | Validate, mask and unmask Brazilian document numbers (CPF, alphanumeric CNPJ) |
+| [pure-schema-regimes](https://github.com/guilhermegor/pure-schema-regimes) | Schema adapters for series whose columns change mid-series |
 | **Engineering tooling** | |
 | [blueprintx](https://github.com/guilhermegor/blueprintx) | Project scaffolding behind every repo here |
 | [timeglass](https://github.com/guilhermegor/timeglass) | AI subscription usage and billing across vendors |
@@ -59,12 +61,12 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 
 ### Layouts
 
-- **Filed with regulators:** layouts-bcb
+- **Filed with regulators and tax authorities:** layouts-bcb · layouts-nfse
 - **Market standards between institutions:** layouts-anbima · layouts-febraban
 
 ### Pure
 
-puremaths · purepricing · purepricing-br · purerisk · pureattribution · purefees · puretidy · puredsa
+puremaths · purepricing · purepricing-br · purerisk · pureattribution · purefees · puretaxes-br · puretidy · puredsa
 
 ### Rulebooks
 
@@ -72,7 +74,7 @@ rulebooks-funds-br · rulebooks-funds-us
 
 ### Integrations
 
-integrations-b3 · integrations-pipefy · integrations-typeform
+integrations-b3 · integrations-nfse · integrations-pipefy · integrations-typeform
 
 ### Hubs
 
