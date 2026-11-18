@@ -23,7 +23,7 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 | **Open data** | `opendata-*`: unofficial SDKs for data that regulators, exchanges and statistics agencies publish. Typed, cached, with provenance. |
 | **Layouts** | `layouts-*`: the file formats institutions exchange. Read, build, validate and write the file, with no network or database calls: fetching and sending it belong to `integrations-*`. |
 | **Pure** | `pure*`: math, pricing, risk, taxes and performance attribution. Computation only, no I/O. A computed number belongs here even when the rule behind it changes over time. |
-| **Rulebooks** | `rulebooks-*`: regulations as data, as in force on a given date. One row per provision (act, article, paragraph), with its source, for fund compliance. They return the rule, never a computed result: applying the rule is `pure*`. |
+| **Rulebooks** | `rulebooks-*`: regulations as data, as in force on a given date. One row per provision (act, article, paragraph), with its verbatim text, source and the original document's hash for audit, for fund compliance. They return the rule, never a computed result: applying the rule is `pure*`. |
 | **Integrations** | `integrations-*`: clients for the platforms operations teams already use. |
 | **Hubs** | `hub-*`: services that own the data for one theme and expose it through an API. Open-source code; data and configuration stay out of the repo. |
 | **Engineering tooling** | Scaffolding, dev environment and release checks behind every repo here. |
@@ -41,8 +41,8 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 | **Layouts** | |
 | [layouts-cvm](https://github.com/guilhermegor/layouts-cvm) | Build and validate the fund files sent to the CVM |
 | **Pure** | |
-| [wwdates](https://github.com/guilhermegor/wwdates) | Global business-day calendars |
-| [pure-docs-br](https://github.com/guilhermegor/pure-docs-br) | Validate, mask and unmask Brazilian document numbers (CPF, alphanumeric CNPJ) |
+| [wwdates](https://github.com/guilhermegor/wwdates) | Global business-day calendars. Being renamed to `purecalendars`; fetching holidays from the web moves to `opendata-calendars` |
+| [pure-docs-br](https://github.com/guilhermegor/pure-docs-br) | Validate, mask and unmask Brazilian document numbers (CPF, alphanumeric CNPJ). Being renamed to `purepii-br` |
 | [pure-schema-regimes](https://github.com/guilhermegor/pure-schema-regimes) | Schema adapters for series whose columns change mid-series |
 | **Engineering tooling** | |
 | [blueprintx](https://github.com/guilhermegor/blueprintx) | Project scaffolding behind every repo here |
@@ -57,7 +57,7 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 
 - **Brazilian regulators & market bodies:** opendata-funddocs-cvm · opendata-bcb · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
 - **Prices, rates, ratings & commodities:** opendata-global-rates · opendata-world-government-bonds · opendata-trading-economics · opendata-spglobal · opendata-yahii · opendata-mais-retorno · opendata-cepea · opendata-coincap · opendata-coinmarket
-- **Macro & fiscal · US regulators · other:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us · opendata-finra-us · opendata-who-int
+- **Macro & fiscal · US regulators · other:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us · opendata-finra-us · opendata-who-int · opendata-calendars
 
 ### Layouts
 
@@ -87,7 +87,7 @@ determinism · publishprobe
 ## Stack
 
 - **Languages:** Python · TypeScript · JavaScript · SQL · HTML · CSS · VBA
-- **Runtimes:** CPython · Node.js
+- **Runtimes:** Node.js
 - **Frameworks:** FastAPI · NestJS · React
 
 ## Connect
