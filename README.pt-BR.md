@@ -23,7 +23,7 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 | **Open data** | `opendata-*`: SDKs não oficiais para os dados que reguladores, bolsas e institutos de estatística publicam. Tipados, com cache e proveniência. |
 | **Layouts** | `layouts-*`: os formatos de arquivo que as instituições trocam entre si. Ler, montar, validar e gravar o arquivo, sem chamadas de rede ou banco: buscá-lo e enviá-lo fica com `integrations-*`. |
 | **Pure** | `pure*`: matemática, precificação, risco, tributos e atribuição de performance. Só cálculo, sem I/O. Um número calculado fica aqui mesmo quando a regra por trás dele muda com o tempo. |
-| **Rulebooks** | `rulebooks-*`: normas como dado, vigentes em uma data. Uma linha por dispositivo (ato, artigo, parágrafo), com a fonte, para o compliance de fundos. Devolvem a norma, nunca um resultado calculado: aplicar a norma é `pure*`. |
+| **Rulebooks** | `rulebooks-*`: normas como dado, vigentes em uma data. Uma linha por dispositivo (ato, artigo, parágrafo), com o texto literal, a fonte e o hash do documento original para auditoria, para o compliance de fundos. Devolvem a norma, nunca um resultado calculado: aplicar a norma é `pure*`. |
 | **Integrations** | `integrations-*`: clientes para as plataformas que as equipes de operações já usam. |
 | **Hubs** | `hub-*`: serviços que são donos dos dados de um tema e os expõem por uma API. Código aberto; dados e configuração ficam fora do repositório. |
 | **Ferramentas de engenharia** | Scaffolding, ambiente de desenvolvimento e checagens de release por trás de cada repositório daqui. |
@@ -41,8 +41,8 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 | **Layouts** | |
 | [layouts-cvm](https://github.com/guilhermegor/layouts-cvm) | Montar e validar os arquivos de fundos enviados à CVM |
 | **Pure** | |
-| [wwdates](https://github.com/guilhermegor/wwdates) | Calendários de dias úteis no mundo todo |
-| [pure-docs-br](https://github.com/guilhermegor/pure-docs-br) | Validar, aplicar e remover a máscara de documentos brasileiros (CPF, CNPJ alfanumérico) |
+| [wwdates](https://github.com/guilhermegor/wwdates) | Calendários de dias úteis no mundo todo. Em renomeação para `purecalendars`; a busca de feriados na web vai para o `opendata-calendars` |
+| [pure-docs-br](https://github.com/guilhermegor/pure-docs-br) | Validar, aplicar e remover a máscara de documentos brasileiros (CPF, CNPJ alfanumérico). Em renomeação para `purepii-br` |
 | [pure-schema-regimes](https://github.com/guilhermegor/pure-schema-regimes) | Adaptadores de schema para séries cujas colunas mudam no meio do caminho |
 | **Ferramentas de engenharia** | |
 | [blueprintx](https://github.com/guilhermegor/blueprintx) | O scaffolding por trás de cada repositório daqui |
@@ -57,7 +57,7 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 
 - **Reguladores e entidades de mercado brasileiros:** opendata-funddocs-cvm · opendata-bcb · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
 - **Preços, taxas, ratings e commodities:** opendata-global-rates · opendata-world-government-bonds · opendata-trading-economics · opendata-spglobal · opendata-yahii · opendata-mais-retorno · opendata-cepea · opendata-coincap · opendata-coinmarket
-- **Macro e fiscal · reguladores dos EUA · outros:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us · opendata-finra-us · opendata-who-int
+- **Macro e fiscal · reguladores dos EUA · outros:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us · opendata-finra-us · opendata-who-int · opendata-calendars
 
 ### Layouts
 
