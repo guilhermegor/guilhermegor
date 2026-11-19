@@ -41,7 +41,7 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 | **Layouts** | |
 | [layouts-cvm](https://github.com/guilhermegor/layouts-cvm) | Montar e validar os arquivos de fundos enviados à CVM |
 | **Pure** | |
-| [wwdates](https://github.com/guilhermegor/wwdates) | Calendários de dias úteis no mundo todo. Em renomeação para `purecalendars`; a busca de feriados na web vai para o `opendata-calendars` |
+| [purecalendars](https://github.com/guilhermegor/purecalendars) | Calendários de dias úteis do Brasil e dos EUA, calculados offline (antigo `wwdates`). A busca de feriados na web vai para o `opendata-calendars` |
 | [pure-docs-br](https://github.com/guilhermegor/pure-docs-br) | Validar, aplicar e remover a máscara de documentos brasileiros (CPF, CNPJ alfanumérico). Em renomeação para `purepii-br` |
 | [pure-schema-regimes](https://github.com/guilhermegor/pure-schema-regimes) | Adaptadores de schema para séries cujas colunas mudam no meio do caminho |
 | **Ferramentas de engenharia** | |
