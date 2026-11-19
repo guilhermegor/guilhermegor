@@ -41,7 +41,7 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 | **Layouts** | |
 | [layouts-cvm](https://github.com/guilhermegor/layouts-cvm) | Build and validate the fund files sent to the CVM |
 | **Pure** | |
-| [wwdates](https://github.com/guilhermegor/wwdates) | Global business-day calendars. Being renamed to `purecalendars`; fetching holidays from the web moves to `opendata-calendars` |
+| [purecalendars](https://github.com/guilhermegor/purecalendars) | Business-day calendars for Brazil and the US, computed offline (renamed from `wwdates`). Fetching holidays from the web moves to `opendata-calendars` |
 | [pure-docs-br](https://github.com/guilhermegor/pure-docs-br) | Validate, mask and unmask Brazilian document numbers (CPF, alphanumeric CNPJ). Being renamed to `purepii-br` |
 | [pure-schema-regimes](https://github.com/guilhermegor/pure-schema-regimes) | Schema adapters for series whose columns change mid-series |
 | **Engineering tooling** | |
