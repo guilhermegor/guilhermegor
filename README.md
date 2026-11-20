@@ -58,7 +58,9 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 
 - **Brazilian regulators & market bodies:** opendata-funddocs-cvm · opendata-bcb · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
 - **Prices, rates, ratings & commodities:** opendata-global-rates · opendata-world-government-bonds · opendata-trading-economics · opendata-spglobal · opendata-yahii · opendata-mais-retorno · opendata-cepea · opendata-coincap · opendata-coinmarket
-- **Macro & fiscal · US regulators · other:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us · opendata-finra-us · opendata-who-int
+- **Macro & fiscal:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us
+- **US regulators:** opendata-finra-us
+- **Other:** opendata-who-int
 
 ### Layouts
 

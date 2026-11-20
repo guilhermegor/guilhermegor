@@ -58,7 +58,9 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 
 - **Reguladores e entidades de mercado brasileiros:** opendata-funddocs-cvm · opendata-bcb · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
 - **Preços, taxas, ratings e commodities:** opendata-global-rates · opendata-world-government-bonds · opendata-trading-economics · opendata-spglobal · opendata-yahii · opendata-mais-retorno · opendata-cepea · opendata-coincap · opendata-coinmarket
-- **Macro e fiscal · reguladores dos EUA · outros:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us · opendata-finra-us · opendata-who-int
+- **Macro e fiscal:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us
+- **Reguladores dos EUA:** opendata-finra-us
+- **Outros:** opendata-who-int
 
 ### Layouts
 
