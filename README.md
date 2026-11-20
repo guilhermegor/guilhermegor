@@ -38,10 +38,11 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 | [opendata-cvm](https://github.com/guilhermegor/opendata-cvm) | CVM issuer and fund data, FIDC monthly reports included |
 | [opendata-b3](https://github.com/guilhermegor/opendata-b3) | B3 public files |
 | [opendata-rfb](https://github.com/guilhermegor/opendata-rfb) | Receita Federal public data |
+| [opendata-calendars](https://github.com/guilhermegor/opendata-calendars) | Holiday calendars fetched from their publishers (B3, ANBIMA, FEBRABAN, NASDAQ, US federal), with cache and provenance |
 | **Layouts** | |
 | [layouts-cvm](https://github.com/guilhermegor/layouts-cvm) | Build and validate the fund files sent to the CVM |
 | **Pure** | |
-| [purecalendars](https://github.com/guilhermegor/purecalendars) | Business-day calendars for Brazil and the US, computed offline (renamed from `wwdates`). Fetching holidays from the web moves to `opendata-calendars` |
+| [purecalendars](https://github.com/guilhermegor/purecalendars) | Business-day calendars for Brazil and the US, computed offline (renamed from `wwdates`). Fetching holidays from the web lives in `opendata-calendars` |
 | [purepii-br](https://github.com/guilhermegor/purepii-br) | Validate, mask and unmask Brazilian document numbers (CPF, CNPJ, RG, CNH and more). Renamed from `pure-docs-br` |
 | [pure-schema-regimes](https://github.com/guilhermegor/pure-schema-regimes) | Schema adapters for series whose columns change mid-series |
 | **Engineering tooling** | |
@@ -57,7 +58,9 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 
 - **Brazilian regulators & market bodies:** opendata-funddocs-cvm · opendata-bcb · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
 - **Prices, rates, ratings & commodities:** opendata-global-rates · opendata-world-government-bonds · opendata-trading-economics · opendata-spglobal · opendata-yahii · opendata-mais-retorno · opendata-cepea · opendata-coincap · opendata-coinmarket
-- **Macro & fiscal · US regulators · other:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us · opendata-finra-us · opendata-who-int · opendata-calendars
+- **Macro & fiscal:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us
+- **US regulators:** opendata-finra-us
+- **Other:** opendata-who-int
 
 ### Layouts
 

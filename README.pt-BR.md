@@ -38,10 +38,11 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 | [opendata-cvm](https://github.com/guilhermegor/opendata-cvm) | Dados de emissores e fundos da CVM, incluindo o informe mensal de FIDC |
 | [opendata-b3](https://github.com/guilhermegor/opendata-b3) | Arquivos públicos da B3 |
 | [opendata-rfb](https://github.com/guilhermegor/opendata-rfb) | Dados públicos da Receita Federal |
+| [opendata-calendars](https://github.com/guilhermegor/opendata-calendars) | Calendários de feriados buscados direto de quem os publica (B3, ANBIMA, FEBRABAN, NASDAQ, feriados federais dos EUA), com cache e proveniência |
 | **Layouts** | |
 | [layouts-cvm](https://github.com/guilhermegor/layouts-cvm) | Montar e validar os arquivos de fundos enviados à CVM |
 | **Pure** | |
-| [purecalendars](https://github.com/guilhermegor/purecalendars) | Calendários de dias úteis do Brasil e dos EUA, calculados offline (antigo `wwdates`). A busca de feriados na web vai para o `opendata-calendars` |
+| [purecalendars](https://github.com/guilhermegor/purecalendars) | Calendários de dias úteis do Brasil e dos EUA, calculados offline (antigo `wwdates`). A busca de feriados na web fica no `opendata-calendars` |
 | [purepii-br](https://github.com/guilhermegor/purepii-br) | Validar, aplicar e remover a máscara de documentos brasileiros (CPF, CNPJ, RG, CNH e outros). Antigo `pure-docs-br` |
 | [pure-schema-regimes](https://github.com/guilhermegor/pure-schema-regimes) | Adaptadores de schema para séries cujas colunas mudam no meio do caminho |
 | **Ferramentas de engenharia** | |
@@ -57,7 +58,9 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 
 - **Reguladores e entidades de mercado brasileiros:** opendata-funddocs-cvm · opendata-bcb · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
 - **Preços, taxas, ratings e commodities:** opendata-global-rates · opendata-world-government-bonds · opendata-trading-economics · opendata-spglobal · opendata-yahii · opendata-mais-retorno · opendata-cepea · opendata-coincap · opendata-coinmarket
-- **Macro e fiscal · reguladores dos EUA · outros:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us · opendata-finra-us · opendata-who-int · opendata-calendars
+- **Macro e fiscal:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us
+- **Reguladores dos EUA:** opendata-finra-us
+- **Outros:** opendata-who-int
 
 ### Layouts
 
