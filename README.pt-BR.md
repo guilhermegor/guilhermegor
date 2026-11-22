@@ -37,6 +37,7 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 | **Open data** | |
 | [opendata-cvm](https://github.com/guilhermegor/opendata-cvm) | Dados de emissores e fundos da CVM, incluindo o informe mensal de FIDC |
 | [opendata-b3](https://github.com/guilhermegor/opendata-b3) | Arquivos públicos da B3 |
+| [opendata-bcb](https://github.com/guilhermegor/opendata-bcb) | Dados do Banco Central do Brasil (SGS, Olinda/PTAX, Focus, boletins de cotações, cadastro de bancos), com cache e proveniência |
 | [opendata-rfb](https://github.com/guilhermegor/opendata-rfb) | Dados públicos da Receita Federal |
 | [opendata-calendars](https://github.com/guilhermegor/opendata-calendars) | Calendários de feriados buscados direto de quem os publica (B3, ANBIMA, FEBRABAN, NASDAQ, feriados federais dos EUA), com cache e proveniência |
 | **Layouts** | |
@@ -56,7 +57,7 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 
 ### Open data
 
-- **Reguladores e entidades de mercado brasileiros:** opendata-funddocs-cvm · opendata-bcb · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
+- **Reguladores e entidades de mercado brasileiros:** opendata-funddocs-cvm · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
 - **Preços, taxas, ratings e commodities:** opendata-global-rates · opendata-world-government-bonds · opendata-trading-economics · opendata-spglobal · opendata-yahii · opendata-mais-retorno · opendata-cepea · opendata-coincap · opendata-coinmarket
 - **Macro e fiscal:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us
 - **Reguladores dos EUA:** opendata-finra-us
