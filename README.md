@@ -70,7 +70,10 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 
 ### Pure
 
-puremaths · purepricing · purepricing-br · purerisk · pureattribution · purefees · puretaxes-br · puretidy · puredsa
+- **Mathematics & data:** puremaths · puredsa · puretidy
+- **Pricing & risk:** purepricing · purepricing-br · purerisk
+- **Fund performance:** pureattribution · purefees
+- **Tax:** puretaxes-br
 
 ### Rulebooks
 
