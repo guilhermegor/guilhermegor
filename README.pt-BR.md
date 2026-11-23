@@ -82,7 +82,9 @@ integrations-b3 · integrations-nfse · integrations-pipefy · integrations-type
 
 ### Hubs
 
-hub-marketdata · hub-pricing · hub-positions · hub-statistics · hub-risk · hub-rulebooks · hub-funddocs
+- **Insumos coletados (persistidos como recebidos: dados de mercado, posições, regulamentos e prospectos de fundos):** hub-marketdata · hub-positions · hub-funddocs
+- **Calculados (preços e gregas, parâmetros de mercado, medidas de risco):** hub-pricing · hub-statistics · hub-risk
+- **Regras (todos os pacotes `rulebooks-*`, versionados e consultáveis):** hub-rulebooks
 
 ### Ferramentas de engenharia
 
