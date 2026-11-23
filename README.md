@@ -38,6 +38,7 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 | [opendata-cvm](https://github.com/guilhermegor/opendata-cvm) | CVM issuer and fund data, FIDC monthly reports included |
 | [opendata-b3](https://github.com/guilhermegor/opendata-b3) | B3 public files |
 | [opendata-bcb](https://github.com/guilhermegor/opendata-bcb) | Banco Central do Brasil data (SGS, Olinda/PTAX, Focus, quotation bulletins, bank registry), with cache and provenance |
+| [opendata-calendars](https://github.com/guilhermegor/opendata-calendars) | Holiday calendars fetched from their publishers (B3, ANBIMA, FEBRABAN, NASDAQ, US federal), with cache and provenance |
 | [opendata-rfb](https://github.com/guilhermegor/opendata-rfb) | Receita Federal public data |
 | **Layouts** | |
 | [layouts-cvm](https://github.com/guilhermegor/layouts-cvm) | Build and validate the fund files sent to the CVM |
@@ -56,7 +57,7 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 
 ### Open data
 
-- **Brazilian regulators & market bodies:** opendata-funddocs-cvm · opendata-calendars · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
+- **Brazilian regulators & market bodies:** opendata-funddocs-cvm · opendata-treasury-br · opendata-anbima-public · opendata-anbima-data · opendata-debenturescombr
 - **Prices, rates, ratings & commodities:** opendata-global-rates · opendata-world-government-bonds · opendata-trading-economics · opendata-spglobal · opendata-yahii · opendata-mais-retorno · opendata-cepea · opendata-coincap · opendata-coinmarket
 - **Macro & fiscal:** opendata-ibge · opendata-fred-us · opendata-fiscal-data-treasury-us
 - **US regulators:** opendata-finra-us
