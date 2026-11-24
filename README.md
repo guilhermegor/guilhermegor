@@ -72,16 +72,18 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 
 - **Mathematics & data:** puremaths · puredsa · puretidy
 - **Pricing & risk:** purepricing · purepricing-br · purerisk
-- **Fund performance:** pureattribution · purefees
-- **Tax:** puretaxes-br
+- **Performance attribution:** pureattribution
+- **Fees & taxes:** purefees · puretaxes-br
 
 ### Rulebooks
 
-rulebooks-funds-br · rulebooks-funds-us
+- **Funds:** rulebooks-funds-br · rulebooks-funds-us
 
 ### Integrations
 
-integrations-b3 · integrations-nfse · integrations-pipefy · integrations-typeform
+- **Market infrastructure:** integrations-b3
+- **Tax authorities:** integrations-nfse
+- **Workflow tools:** integrations-pipefy · integrations-typeform
 
 ### Hubs
 

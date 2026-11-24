@@ -72,16 +72,18 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 
 - **Matemática e dados:** puremaths · puredsa · puretidy
 - **Precificação e risco:** purepricing · purepricing-br · purerisk
-- **Performance de fundos:** pureattribution · purefees
-- **Tributos:** puretaxes-br
+- **Atribuição de performance:** pureattribution
+- **Custos e tributos:** purefees · puretaxes-br
 
 ### Rulebooks
 
-rulebooks-funds-br · rulebooks-funds-us
+- **Fundos:** rulebooks-funds-br · rulebooks-funds-us
 
 ### Integrations
 
-integrations-b3 · integrations-nfse · integrations-pipefy · integrations-typeform
+- **Infraestrutura de mercado:** integrations-b3
+- **Fisco:** integrations-nfse
+- **Ferramentas de fluxo de trabalho:** integrations-pipefy · integrations-typeform
 
 ### Hubs
 
