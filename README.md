@@ -12,7 +12,11 @@ Built for bank treasuries, brokers, fund administrators and asset managers: pric
 
 1. **Foundation** (now): open-source libraries for public data, regulatory file formats, and the math behind pricing, risk and taxes. Everything below.
 2. **APIs and data pipelines**: `hub-*` services over those libraries for market data, pricing, positions, statistics, risk, rulebooks and fund documents.
-3. **Products**: front-to-back tooling for financial institutions, from pre-trade to accounting.
+3. **Products**: front-to-back tooling for financial institutions, from pre-trade to accounting. For example:
+   - **Limit monitoring, pre- and post-trade:** alerts for regulatory mandate breaches and for liquidity, market, capital, liability-concentration and credit limits.
+   - **Tax computation:** taxes due, ready to be paid.
+   - **Fees and rebates:** management and performance fees, and rebates owed to partner fund distributors.
+   - **Performance attribution:** passive and active, with each result traced to the decision-maker accountable for it.
 
 ## How it's organized
 

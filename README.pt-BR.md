@@ -12,7 +12,11 @@ Feitas para tesourarias de bancos, corretoras, administradores fiduciários e ge
 
 1. **Fundação** (agora): bibliotecas open source para dados públicos, layouts de arquivos regulatórios e a matemática de precificação, risco e tributos. Tudo o que está abaixo.
 2. **APIs e pipelines de dados**: serviços `hub-*` sobre essas bibliotecas para dados de mercado, precificação, posições, estatísticas, risco, rulebooks e documentos de fundos.
-3. **Produtos**: ferramentas front-to-back para instituições financeiras, do pré-trade à contabilidade.
+3. **Produtos**: ferramentas front-to-back para instituições financeiras, do pré-trade à contabilidade. Por exemplo:
+   - **Monitoramento de limites, pré e pós-trade:** alertas de desenquadramento regulatório e de limites de liquidez, mercado, capital, concentração de passivo e crédito.
+   - **Apuração de tributos:** impostos a recolher, prontos para o pagamento.
+   - **Taxas e rebates:** taxas de administração e de performance, e rebates devidos a distribuidores parceiros de fundos.
+   - **Atribuição de performance:** passiva e ativa, com cada resultado atribuído ao seu vértice de responsabilidade.
 
 ## Como está organizado
 
